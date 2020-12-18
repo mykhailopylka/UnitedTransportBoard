@@ -1,0 +1,60 @@
+.advanced{
+    display: block;
+    max-width: 30%;
+    width: 100%;
+    // border: 1px solid #000;
+    box-shadow: 2px 2px 8px rgba($color: $black, $alpha: .5);
+    padding: 1.5rem;
+}
+.advanced__form-input, .advanced__form-load{
+    width: calc(50% - .5rem);
+    border: 1px solid $light-gray;
+    padding: 1rem;
+    border-radius: 5px;
+    color: $gray;
+}
+.input-color{
+    color: $black;
+}
+
+// load number
+.advanced__form-load{
+    width: calc(100% - .6rem);
+    margin: 3rem 0 5rem;
+}
+
+// btns
+.advanced__form-btn{
+    display: flex;
+    justify-content: right;
+}
+.advanced__form-typebtn{
+    display: block;
+    padding: 1rem 2rem;
+    background-color: $green;
+    border-radius: .8rem;
+    margin-right: 0.5rem;
+    border: none;
+    cursor: pointer;
+        &:hover{
+            background-color: lighten($color: $green, $amount: 10%);
+            box-shadow: 1px 1px 3px rgba($color: $black, $alpha: .5);
+        }
+}
+
+
+
+//mod for input ====================
+
+
+.stops-left{
+    position: relative;
+
+        &::before{
+            content: "test";
+            position: absolute;
+            top: 3rem;
+            left: 5rem;
+        }
+    
+}

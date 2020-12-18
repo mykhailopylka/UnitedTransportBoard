@@ -1,0 +1,37 @@
+.search{
+    display: block;
+    max-width: 30rem;
+    width: 100%;
+
+}
+.search__input{
+    display: block;
+    position: relative;
+    width: 100%;    
+    font-family: inherit;
+    font-size: 1.4rem;
+    padding: 1.8rem 2rem;
+    background: transparent;
+    padding-left: 2rem;
+    border: none;
+    // Забираю рамку при натисканні на кнопку:
+        &:active, &:focus {
+            outline: none;
+            color: $dark-gray;
+            padding: 1.6rem 2rem;
+        }
+        &::placeholder{
+            color: $dark-gray;
+        }
+}
+
+// .search-icon{
+//     position: relative;
+//     &::after{
+//         content: "";
+//         position: absolute;
+//         background: url("../images/icons/search-solid.svg") no-repeat;
+//             left: 80%;
+//             top: 1.7rem;
+//     }
+// }

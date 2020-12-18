@@ -1,0 +1,75 @@
+@import "vars";
+@import "vendor/normilize";
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+    font-size: 10px;
+  }
+  *,
+  *:after,
+  *:before {
+    box-sizing: inherit;
+  }
+
+body {
+    // background-color: #181818;
+
+
+    font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: $gray;
+
+}
+
+a{
+  // color: $white;
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5{
+  color: $dark-gray;
+}
+h1, .head-title{
+  font-size: 1.8rem;
+  margin-top: 0;
+  color: $white;
+}
+h2{
+  font-size: 1.6rem;
+}
+h3{
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+h4 {
+  font-size: 2.1rem;
+}
+h5{
+  font-size: 1.8rem;
+  margin: 0;
+  padding-bottom: 1.5rem;
+}
+h6{
+  font-size: 2.6rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+// bloks
+@import "blocks/page";
+
+@import "blocks/header__menu";
+@import "blocks/main__menu";
+@import "blocks/search";
+@import "blocks/find-loads";
+
+@import "blocks/conteiner";
+@import "blocks/advanced";
+

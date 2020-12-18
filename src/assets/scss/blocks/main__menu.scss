@@ -1,0 +1,26 @@
+.main__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px sold red;
+}
+
+// menu --------------
+.main__menu-left, .main__menu-list{
+    display: flex;
+    align-items: center;
+}
+.main__menu-item{
+    margin-right: 1rem;
+}
+.main__menu-item a{
+    color: $dark-gray;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: .25s all;
+        &:hover{
+            color: lighten($color: $dark-gray, $amount: 20%);
+            text-decoration: underline;
+        }
+}

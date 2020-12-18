@@ -1,0 +1,58 @@
+.find-loads{
+    display: block;
+    width: 100%;
+    background-color: $blue;
+    padding: 2rem;
+    box-shadow: 0 4px 4px rgba($black, .25);
+    margin-bottom: 5rem;    
+}
+.find-loads__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.find-loads__left{
+    display: flex;
+    flex-grow: 1;
+}
+.find-loads__font{
+    color: $white;
+}
+.find-loads__form{
+    margin-right: 2rem;
+        :active, :hover, :focus {
+            outline: 0;
+            outline-offset: 0;
+        }
+}
+.find-loads__form input{
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+}
+// width for serch form ----------
+.find-loads__city{
+    display: block;
+    width: 30rem;
+}
+.find-loads__dh{
+    display: block;
+    width: 8rem;
+}
+
+// search button -------------
+.find-loads__right{
+    margin-top: 3.5rem;
+}
+.find-loads__btn{
+    padding: 1rem 3rem;
+    background-color: $green;
+    color: $secondary;
+    font-weight: 600;
+    border-radius: 1rem;
+    transition: .25s all;
+        &:hover{
+            background-color: darken($color: $green, $amount: 5%);
+            color: $white;
+            box-shadow: 0 4px 4px rgba($black, .25);    
+
+        }
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <link rel="icon" href="img/favicon.png" type="image" />
+    
+    
+    <title>MyCloud | Home</title></head>
+<body>
+    <div class="page">
+        <div class="header__menu">
+            <ul class="header__menu-left">
+                <li class="header__menu-item">
+                    <a href="#">Load Board</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#">Get a Qote</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#">Track Shipment</a>
+                </li>
+            </ul>
+            <a href="#">Login</a>
+        </div>
+        <main class="main">
+            
+            <section class="main__menu">
+                <div class="main__menu-left">
+                    <a href="index.html">
+                        <img class="main__manu-logo" src="assets/images/logo.webp" alt="logo">
+                    </a>
+                    <ul class="main__menu-list">
+                        <li class="main__menu-item">
+                            <a href="#">our technology</a>
+                        </li>
+                        <li class="main__menu-item">
+                            <a href="#">shipment solution</a>
+                        </li>
+                        <li class="main__menu-item">
+                            <a href="#">carrier solutions</a>
+                        </li>
+                        <li class="main__menu-item">
+                            <a href="#">our company</a>
+                        </li>
+                        <li class="main__menu-item">
+                            <a href="#">contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-icon">
+                    <form class="search" action="/" method="POST">
+                        <input class="search__input" type="text" placeholder="Search">
+                    </form>
+                </div>
+            </section>  <!-- /.main__menu  -->
+            
+            <section class="find-loads">
+                <h1>
+                    Finde Loads
+                </h1>
+                <div class="find-loads__wrapper">
+                    <div class="find-loads__left">
+                        <div class="find-loads__item">
+                            <span class="find-loads__font">
+                                Origin
+                            </span>
+                            <form class="find-loads__form" action="/" method="POST">
+                                <input class="find-loads__city" type="text" placeholder="City, State, ZIP">
+                            </form>
+                        </div>
+                        <div class="find-loads__item">
+                            <span class="find-loads__font">
+                                DH-O
+                            </span>
+                            <form class="find-loads__form" action="/" method="POST">
+                                <input class="find-loads__dh" type="text" value="100">
+                            </form>
+                        </div>
+                        <div class="find-loads__item">
+                            <span class="find-loads__font">
+                                Destination
+                            </span>
+                            <form class="find-loads__form form--destination" action="/" method="POST">
+                                <input class="find-origin" type="text" placeholder="City, State, ZIP">
+                            </form>
+                        </div>
+                        <div class="find-loads__item">
+                            <span class="find-loads__font">
+                                DH-D
+                            </span>
+                            <form class="find-loads__form form--dhd" action="/" method="POST">
+                                <input class="find-loads__dh" type="text" value="100">
+                            </form>
+                        </div>
+                        <div class="find-loads__item">
+                            <span class="find-loads__font">
+                                Equipment Type
+                            </span>
+                            <form class="find-loads__form form--type" action="/" method="POST">
+                                <input class="find-loads__city" type="text" placeholder="All Equipment">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="find-loads__right">
+                        <a class="find-loads__btn" href="#" >Search</a>
+                    </div>
+                </div> <!-- find-loads__wrapper-->
+            </section> <!-- /.find-loads-->
+            
+            <div class="conteiner">
+                <section class="advanced">
+                    <div class="advanced__head">
+                        <h2>Advanced Search</h2>
+                    </div>
+                    <div class="advanced__form">
+                        <form class="advanced__form-lines" action="/" method="POST">
+                            <div class="advanced__form-item">
+                                <h3>Pickup Date Range</h3>
+                                <input class="advanced__form-input" type="date">
+                                <input class="advanced__form-input" type="date">
+                            </div>
+                            <div class="advanced__form-item">
+                                <h3>Delivery Date Range</h3>
+                                <input class="advanced__form-input" type="date">
+                                <input class="advanced__form-input" type="date">
+                            </div>
+                            <div class="advanced__form-item">
+                                <h3>Loads Miles</h3>
+                                <input class="advanced__form-input input-color" type="text" value="0">
+                                <input class="advanced__form-input input-color" type="text" value="1000">
+                            </div>
+                            <div class="advanced__form-item">
+                                <h3>Stops</h3>
+                                <input class="advanced__form-input input-color stops-left" type="text" value="0">
+                                <input class="advanced__form-input input-color stops-right" type="text" value="1000">
+                            </div>
+                            <!-- load number -->
+                            <div class="advanced__form-item">
+                                <input class="advanced__form-load" type="text" placeholder="Load Number">
+                            </div>
+                            <!-- btns -->
+                            <div class="advanced__form-item advanced__form-btn">
+                                <input class="advanced__form-typebtn"  type="reset" value="Clear Search">
+                                <button class="advanced__form-typebtn">Search</button>
+                            </div>                    
+                        </form>
+                        
+                        </div> <!-- /.advanced__form-->
+                </section>
+            
+                <section class="loads">
+            
+                </section>
+            </div>
+        </main>
+        <footer class="footer">Footer</footer>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
