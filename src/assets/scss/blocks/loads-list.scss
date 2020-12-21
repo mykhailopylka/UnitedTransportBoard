@@ -1,0 +1,53 @@
+.loads-list{
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+}
+.loads-list__table{
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+}
+.loads-list__head, .loads-list__item{
+    // border: 1px solid #000;
+    width: calc(100% / 7);
+    text-align: center;
+    color: $black;
+}
+.loads-list__head{
+    padding: 1rem;
+}
+.loads-list__1{
+    padding: 0 .5rem;
+}
+// .loads-list__2, .loads-list__3, .loads-list__4, .loads-list__5, .loads-list__6, .loads-list__7{
+//     padding: 0 5rem;
+// }
+
+
+// table position ---------------
+.loads-list__item--1{
+    color: $blue;
+    font-weight: 600;
+}
+.loads-list__item{
+    padding: 1rem;
+    line-height: 1;
+}
+
+// btn ---------
+
+.loads-list__btn{
+    display: block;
+    color: $white;
+    background-color: $blue;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    font-weight: 900;
+    border-radius: 1rem;
+    transition: .25s all;
+        &:hover{
+            background-color: lighten($color: $blue, $amount: 10%);
+            box-shadow: 1px 1px 5px $black;
+        }
+}

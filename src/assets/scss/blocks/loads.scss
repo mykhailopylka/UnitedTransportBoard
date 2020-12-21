@@ -1,0 +1,72 @@
+.loads{
+    display: block;
+    width: 100%;
+    // border: 1px solid #000;
+    box-shadow: 2px 2px 8px rgba($color: $black, $alpha: .5);
+    padding: 1.5rem;
+    margin-left: 2rem;
+    
+}
+.loads__head-left, .loads__head-update{
+    margin: 0;
+    padding: 0;
+}
+
+.loads__head{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.loads__head-left, .loads__head-right{
+    display: flex;
+    align-items: flex-end;
+}
+.loads__head-left h5, .loads__number, .loads__head-update, .loads__head_time_block {
+    margin-right: 1rem;
+}
+.loads__head-right{
+    font-size: 1.6rem;
+}
+.loads__head-advanced{
+    position: relative;
+    color: $blue;
+    margin-left: 2rem;
+    cursor: pointer;
+        &:hover{
+            color: lighten($color: $blue, $amount: 10%);
+            text-decoration: underline;
+        }
+}
+.loads__number{
+    font-size: 1.8rem;
+}
+
+
+.loads__head-btn button{
+    background: transparent url('../images/icons/refresh.svg') no-repeat center top;
+    border: 0;
+    margin-left: 2rem;
+    width: 2rem;
+    height: 2rem;
+    text-indent: -1000em; // text invise
+    cursor: pointer;
+        &:hover{
+            box-shadow: 1px 1px 5px $black;
+            border-radius: 50%;
+        }
+}
+
+// робота з svg---------
+
+// .loads__head-refresh svg{
+//     display: block;
+//     width: 2rem;
+//     height: 2rem;
+//     margin-left: 2rem;
+//     cursor: pointer;
+//     fill: $blue;
+//     transform: translateY(20%);
+//     &:hover{
+//         fill: lighten($color: $blue, $amount: 10%);
+//     }
+// }
