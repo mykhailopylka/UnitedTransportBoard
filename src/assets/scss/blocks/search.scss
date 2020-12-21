@@ -18,20 +18,30 @@
         &:active, &:focus {
             outline: none;
             color: $dark-gray;
-            padding: 1.6rem 2rem;
         }
         &::placeholder{
             color: $dark-gray;
         }
 }
 
-// .search-icon{
-//     position: relative;
-//     &::after{
-//         content: "";
-//         position: absolute;
-//         background: url("../images/icons/search-solid.svg") no-repeat;
-//             left: 80%;
-//             top: 1.7rem;
-//     }
-// }
+.search-icon{
+    position: relative;
+    padding-right: 3rem;
+    border: none;
+    &:hover{
+        background-color: rgba($color: $light-gray, $alpha: .4) ;
+        border-radius: 5px;
+    }
+    &::after{
+        content: url("../images/icons/search-solid.svg");
+        position: absolute;
+        // background: url("../images/icons/search-solid.svg") no-repeat;
+            width: 2rem;
+            height: 2rem;
+            // left: 100%;
+            top: 1.7rem;
+            right: 2rem;
+            border: 1px solid transparent;
+            // padding-left: 1rem;
+    }
+}

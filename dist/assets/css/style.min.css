@@ -414,10 +414,25 @@ h6 {
   border: none; }
   .search__input:active, .search__input:focus {
     outline: none;
-    color: #211F20;
-    padding: 1.6rem 2rem; }
+    color: #211F20; }
   .search__input::placeholder {
     color: #211F20; }
+
+.search-icon {
+  position: relative;
+  padding-right: 3rem;
+  border: none; }
+  .search-icon:hover {
+    background-color: rgba(200, 200, 200, 0.4);
+    border-radius: 5px; }
+  .search-icon::after {
+    content: url("../images/icons/search-solid.svg");
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 1.7rem;
+    right: 2rem;
+    border: 1px solid transparent; }
 
 .find-loads {
   display: block;
