@@ -60,7 +60,7 @@ title: United Transport | Home
                     Destination
                 </span>
                 <form class="find-loads__form form--destination" action="/" method="POST">
-                    <input class="find-origin" type="text" placeholder="City, State, ZIP">
+                    <input class="find-loads__city" type="text" placeholder="City, State, ZIP">
                 </form>
             </div>
             <div class="find-loads__item">
@@ -166,34 +166,42 @@ title: United Transport | Home
         <div id="mySidenavAdd" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeAdd()">&times;</a>
             <div class="sidenav__content add_loads">
-                <form action="../vendor/create.php" method="post">
+                <form action="../vendor/add.php" method="post">
                     <div class="add_loads-item">
                         <span>Pickup</span>
-                        <input class="add_loads-input" type="text" name="Pickup" placeholder="input Pickup place">
+                        <input class="add_loads-input" type="text" name="Pickup" placeholder="Input pickup place">
                     </div>
                     <div class="add_loads-item">
-                        <span>Pickup time</span>
-                        <input class="add_loads-input" type="text" name="Pickup-time" placeholder="input Pickup time">
+                        <span>Pickup Date</span>
+                        <input class="add_loads-input" type="date" name="Pickup-time" placeholder="Input pickup time">
+                    </div>
+                    <div class="add_loads-item">
+                        <label for="appt">Pickup time:</label>
+                        <input class="add_loads-input" type="time" id="appt" name="appt" min="00:00" max="24:00" required>
                     </div>
                     <div class="add_loads-item">
                         <span>Delivery</span>
-                        <input class="add_loads-input" type="text" name="Delivery" placeholder="input Delivery place">
+                        <input class="add_loads-input" type="text" name="Delivery" placeholder="Input delivery place">
                     </div>
                     <div class="add_loads-item">
-                        <span>Delivery time</span>
-                        <input class="add_loads-input" type="text" name="Delivery-time" placeholder="input Delivery time">
+                        <span>Delivery date</span>
+                        <input class="add_loads-input" type="date" name="Delivery-time" placeholder="Input delivery time">
+                    </div>
+                    <div class="add_loads-item">
+                        <label for="dappt">Delivery time:</label>
+                        <input class="add_loads-input" type="time" id="dappt" name="dappt" min="00:00" max="24:00" required>
                     </div>
                     <div class="add_loads-item">
                         <span>Loaded Miles</span>
-                        <input class="add_loads-input" type="text" name="Loaded_Miles" placeholder="input Loaded Miles">
+                        <input class="add_loads-input" type="text" name="Loaded_Miles" placeholder="Input loaded miles">
                     </div>
                     <div class="add_loads-item">
                         <span>Weight</span>
-                        <input class="add_loads-input" type="text" name="Weight" placeholder="input load's weight">
+                        <input class="add_loads-input" type="text" name="Weight" placeholder="Input load's weight">
                     </div>
                     <div class="add_loads-item">
                         <span>Rate</span>
-                        <input class="add_loads-input" type="text" name="rate" placeholder="input load's price">
+                        <input class="add_loads-input" type="text" name="rate" placeholder="Input load's price">
                     </div>
                     <div class="add_loads-item">
                         <h3>Type of van:</h3>
@@ -210,12 +218,12 @@ title: United Transport | Home
                     </div>
 
                     <span>Comodity</span><br>
-                    <textarea class="add_loads-text" name="Comodity"></textarea><br>
+                    <textarea class="add_loads-text" name="Comodity" placeholder="Describe the load"></textarea><br>
                     
                     <span>Warning</span><br>
-                    <textarea class="add_loads-text" name="Warning"></textarea><br>
+                    <textarea class="add_loads-text" name="Warning" placeholder="Describe warnings of the load"></textarea><br>
 
-                    <button class="loads-list__btn add__btn" type="submit ">Add load</button>
+                    <button class="loads-list__btn add__btn" type="submit">Add load</button>
                 </form>
             </div>
         </div>
