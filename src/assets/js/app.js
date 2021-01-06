@@ -1,8 +1,5 @@
 console.log('file 1');
 
-
-
-    
     /* функция добавления ведущих нулей */
     /* (если число меньше десяти, перед числом добавляем ноль) */
     function zero_first_format(value)
@@ -14,7 +11,7 @@ console.log('file 1');
         return value;
     }
 
-    /* функция получения текущей даты и времени */
+    /* функція для отримання дати та часу */
     function date_time()
     {
         var current_datetime = new Date();
@@ -34,3 +31,11 @@ console.log('file 1');
 
     document.getElementById('loads__head-refresh').window.location.reload();
 
+// book info ---------------------
+// function openNav() {
+//     document.getElementById("mySidenav").style.width = "250px";
+//   }
+  
+//   function closeNav() {
+//     document.getElementById("mySidenav").style.width = "0";
+//   }

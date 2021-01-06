@@ -1,0 +1,119 @@
+---
+layout: default
+title: United Transport | Update
+---
+<section class="main__menu">
+    <div class="main__menu-left">
+        <a href="index.html">
+            <img class="main__manu-logo" src="assets/images/logo.webp" alt="logo">
+        </a>
+        <ul class="main__menu-list">
+            <li class="main__menu-item">
+                <a href="#">our technology</a>
+            </li>
+            <li class="main__menu-item">
+                <a href="#">shipment solution</a>
+            </li>
+            <li class="main__menu-item">
+                <a href="#">carrier solutions</a>
+            </li>
+            <li class="main__menu-item">
+                <a href="#">our company</a>
+            </li>
+            <li class="main__menu-item">
+                <a href="#">contact us</a>
+            </li>
+        </ul>
+    </div>
+    <div class="search-icon">
+        <form class="search" action="/" method="POST">
+            <input class="search__input" type="text" placeholder="Search">
+        </form>
+    </div>
+</section>  <!-- /.main__menu  -->
+
+<section class="find-loads">
+    <h1>
+        Finde Loads
+    </h1>
+    <div class="find-loads__wrapper">
+        <div class="find-loads__left">
+            <div class="find-loads__item">
+                <span class="find-loads__font">
+                    Origin
+                </span>
+                <form class="find-loads__form" action="/" method="POST">
+                    <input class="find-loads__city" type="text" placeholder="City, State, ZIP">
+                </form>
+            </div>
+            <div class="find-loads__item">
+                <span class="find-loads__font">
+                    DH-O
+                </span>
+                <form class="find-loads__form" action="/" method="POST">
+                    <input class="find-loads__dh" type="text" value="100">
+                </form>
+            </div>
+            <div class="find-loads__item">
+                <span class="find-loads__font">
+                    Destination
+                </span>
+                <form class="find-loads__form form--destination" action="/" method="POST">
+                    <input class="find-origin" type="text" placeholder="City, State, ZIP">
+                </form>
+            </div>
+            <div class="find-loads__item">
+                <span class="find-loads__font">
+                    DH-D
+                </span>
+                <form class="find-loads__form form--dhd" action="/" method="POST">
+                    <input class="find-loads__dh" type="text" value="100">
+                </form>
+            </div>
+            <div class="find-loads__item">
+                <span class="find-loads__font">
+                    Equipment Type
+                </span>
+                <form class="find-loads__form form--type" action="/" method="POST">
+                    <input class="find-loads__city" type="text" placeholder="All Equipment">
+                </form>
+            </div>
+        </div>
+        <div class="find-loads__right">
+            <a class="find-loads__btn" href="#" >Search</a>
+        </div>
+    </div> <!-- find-loads__wrapper-->
+</section> <!-- /.find-loads-->
+<div class="conteiner">
+<!-- loads --------------------- -->
+<section class="loads">    
+    <!-- load list for update --------------- -->
+    <div class="loads-list">
+        <table class="loads-list__table">
+            <th class="loads-list__head loads-list__1">United Transport</th>
+            <th class="loads-list__head loads-list__2">Pickup</th>
+            <th class="loads-list__head loads-list__3">Delivery</th>
+            <th class="loads-list__head loads-list__4">Loaded Miles</th>
+            <th class="loads-list__head loads-list__5">Wheight</th>
+            <th class="loads-list__head loads-list__5">Rate, $</th>
+            <th class="loads-list__head loads-list__6">Equipment</th>
+            <th class="loads-list__head loads-list__7"> </th>
+            <tr >
+                <td class="loads-list__item loads-list__item--1">NUM101011</td>
+                <td class="loads-list__item loads-list__item--2">Hammond, IL
+                    <p>7:01 AM</p>
+                </td>
+                <td class="loads-list__item loads-list__item--3">Detroit, MI
+                    <p>5:01 PM</p></td>
+                <td class="loads-list__item oads-list__item--4">450</td>
+                <td class="loads-list__item loads-list__item--5">42 655 lbs</td>
+                <td class="loads-list__item loads-list__item--6">1400 $</td>
+                <td class="loads-list__item loads-list__item--7">Dry Van</td>
+                <td class="loads-list__item" onclick="openNav()">
+                    <span class="loads-list__btn" >Update</span>
+                </td>                    
+            </tr>
+        </table>
+    </div>
+</section> <!-- /.loads ------------>
+</div> <!-- /.conteiner   -->

@@ -22,9 +22,11 @@ body {
     font-size: 1.4rem;
     line-height: 1.5;
     color: $gray;
-
 }
 
+.main{
+  margin-bottom: 2rem;
+}
 a{
   // color: $white;
   text-decoration: none;
@@ -74,3 +76,5 @@ h6{
 @import "blocks/advanced";
 @import "blocks/loads";
 @import "blocks/loads-list";
+@import "blocks/book-info";
+@import "blocks/add_loads";

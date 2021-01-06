@@ -21,10 +21,10 @@
         <div class="header__menu">
             <ul class="header__menu-left">
                 <li class="header__menu-item">
-                    <a href="#">Load Board</a>
+                    <a href="index.html">Load Board</a>
                 </li>
                 <li class="header__menu-item">
-                    <a href="#">Get a Qote</a>
+                    <a href="update.html">Get a Qote</a>
                 </li>
                 <li class="header__menu-item">
                     <a href="#">Track Shipment</a>
@@ -165,8 +165,9 @@
                             <h5>
                                 Available Loads
                             </h5>
-                            <span class="loads__number" name="loads_number">(8)</span>
+                            <span class="loads__number" name="loads_number">(8)</span> 
                         </div>
+                        
                         <div class="loads__head-right">
                             <p class="loads__head-update">
                                 Last Update:
@@ -177,7 +178,6 @@
                             <div class="loads__head-refresh" id="loads__head-refresh">
                                 <form class="loads__head-btn" id="loads__head-btn" action="#">
                                     <button type="submit" value = "Refresh" onclick="history.go(0)">
-                                        <!-- <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sync-alt" class="svg-inline--fa fa-sync-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M370.72 133.28C339.458 104.008 298.888 87.962 255.848 88c-77.458.068-144.328 53.178-162.791 126.85-1.344 5.363-6.122 9.15-11.651 9.15H24.103c-7.498 0-13.194-6.807-11.807-14.176C33.933 94.924 134.813 8 256 8c66.448 0 126.791 26.136 171.315 68.685L463.03 40.97C478.149 25.851 504 36.559 504 57.941V192c0 13.255-10.745 24-24 24H345.941c-21.382 0-32.09-25.851-16.971-40.971l41.75-41.749zM32 296h134.059c21.382 0 32.09 25.851 16.971 40.971l-41.75 41.75c31.262 29.273 71.835 45.319 114.876 45.28 77.418-.07 144.315-53.144 162.787-126.849 1.344-5.363 6.122-9.15 11.651-9.15h57.304c7.498 0 13.194 6.807 11.807 14.176C478.067 417.076 377.187 504 256 504c-66.448 0-126.791-26.136-171.315-68.685L48.97 471.03C33.851 486.149 8 475.441 8 454.059V320c0-13.255 10.745-24 24-24z"></path></svg> -->
                                     </button>   
                                 </form>
                                 
@@ -188,8 +188,110 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Add loads --------- -->
+                    <div class="loads-list__item" onclick="AddLoad()">
+                        <span class="loads-list__btn" >
+                            Add load
+                        </span>
+                    </div>
+                    <div id="mySidenavAdd" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeAdd()">&times;</a>
+                        <div class="sidenav__content add_loads">
+                            <form action="../vendor/create.php" method="post">
+                                <div class="add_loads-item">
+                                    <span>Pickup</span>
+                                    <input class="add_loads-input" type="text" name="Pickup" placeholder="input Pickup place">
+                                </div>
+                                <div class="add_loads-item">
+                                    <span>Pickup time</span>
+                                    <input class="add_loads-input" type="text" name="Pickup-time" placeholder="input Pickup time">
+                                </div>
+                                <div class="add_loads-item">
+                                    <span>Delivery</span>
+                                    <input class="add_loads-input" type="text" name="Delivery" placeholder="input Delivery place">
+                                </div>
+                                <div class="add_loads-item">
+                                    <span>Delivery time</span>
+                                    <input class="add_loads-input" type="text" name="Delivery-time" placeholder="input Delivery time">
+                                </div>
+                                <div class="add_loads-item">
+                                    <span>Loaded Miles</span>
+                                    <input class="add_loads-input" type="text" name="Loaded_Miles" placeholder="input Loaded Miles">
+                                </div>
+                                <div class="add_loads-item">
+                                    <span>Weight</span>
+                                    <input class="add_loads-input" type="text" name="Weight" placeholder="input load's weight">
+                                </div>
+                                <div class="add_loads-item">
+                                    <span>Rate</span>
+                                    <input class="add_loads-input" type="text" name="rate" placeholder="input load's price">
+                                </div>
+                                <div class="add_loads-item">
+                                    <h3>Type of van:</h3>
+                                    <div class="add_loads-item__choose">
+                                        <div class="add_loads-item__choose-type">
+                                            <input type="radio" id="van" name="gender" value="van">
+                                            <label for="male">Dry Van</label> 
+                                        </div>
+                                        <div class="add_loads-item__choose-type"> 
+                                            <input type="radio" id="reefer" name="gender" value="reefer">
+                                            <label for="female">Reefer</label>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <span>Comodity</span><br>
+                                <textarea class="add_loads-text" name="Comodity"></textarea><br>
+                                
+                                <span>Warning</span><br>
+                                <textarea class="add_loads-text" name="Warning"></textarea><br>
+            
+                                <button class="loads-list__btn add__btn" type="submit ">Add load</button>
+                            </form>
+                        </div>
+                    </div>
             
             <!-- loads list ----------------- -->
+                    <!-- Book info ------- -->
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="sidenav__content">
+                            <div class="loads-list">
+                                <table class="loads-list__table">
+                                    <th class="loads-list__head loads-list__1">United Transport</th>
+                                    <th class="loads-list__head loads-list__2">Pickup</th>
+                                    <th class="loads-list__head loads-list__3">Delivery</th>
+                                    <th class="loads-list__head loads-list__4">Loaded Miles</th>
+                                    <th class="loads-list__head loads-list__5">Wheight</th>
+                                    <th class="loads-list__head loads-list__5">Rate, $</th>
+                                    <th class="loads-list__head loads-list__6">Equipment</th>
+                                    <th class="loads-list__head loads-list__7"> </th>
+                                    <tr >
+                                        <td class="loads-list__item loads-list__item--1">NUM101011</td>
+                                        <td class="loads-list__item loads-list__item--2">Hammond, IL
+                                            <p>7:01 AM</p>
+                                        </td>
+                                        <td class="loads-list__item loads-list__item--3">Detroit, MI
+                                            <p>5:01 PM</p></td>
+                                        <td class="loads-list__item oads-list__item--4">450</td>
+                                        <td class="loads-list__item loads-list__item--5">42 655 lbs</td>
+                                        <td class="loads-list__item loads-list__item--6">1400 $</td>
+                                        <td class="loads-list__item loads-list__item--7">Dry Van</td>                    
+                                    </tr>
+                                </table>
+                            </div>
+                            <h2>Comodity:</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti itaque eveniet ea adipisci! Quam ipsam, nisi quo corporis dicta repellat!
+                            </p>
+                            <h2>Warning:</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti itaque eveniet ea adipisci! Quam ipsam, nisi quo corporis dicta repellat!
+                            </p>
+                        </div>            
+                      </div>          
+                    
+                    <!-- /book info--------------- -->
                     <div class="loads-list">
                         <table class="loads-list__table">
                             <th class="loads-list__head loads-list__1">United Transport</th>
@@ -197,6 +299,7 @@
                             <th class="loads-list__head loads-list__3">Delivery</th>
                             <th class="loads-list__head loads-list__4">Loaded Miles</th>
                             <th class="loads-list__head loads-list__5">Wheight</th>
+                            <th class="loads-list__head loads-list__5">Rate, $</th>
                             <th class="loads-list__head loads-list__6">Equipment</th>
                             <th class="loads-list__head loads-list__7"> </th>
                             <tr >
@@ -208,101 +311,43 @@
                                     <p>5:01 PM</p></td>
                                 <td class="loads-list__item oads-list__item--4">450</td>
                                 <td class="loads-list__item loads-list__item--5">42 655 lbs</td>
-                                <td class="loads-list__item loads-list__item--6">Dry Van</td>
-                                <td class="loads-list__item">
-                                    <a class="loads-list__btn" href="#">Booking Info</a>
-                                </td>                    
-                            </tr>
-                            <tr >
-                                <td class="loads-list__item loads-list__item--1">NUM101012</td>
-                                <td class="loads-list__item loads-list__item--2">Hammond, IL
-                                    <p>7:01 AM</p>
-                                </td>
-                                <td class="loads-list__item loads-list__item--3">Detroit, MI
-                                    <p>5:01 PM</p></td>
-                                <td class="loads-list__item oads-list__item--4">450</td>
-                                <td class="loads-list__item loads-list__item--5">42 655 lbs</td>
-                                <td class="loads-list__item loads-list__item--6">Dry Van</td>
-                                <td class="loads-list__item">
-                                    <a class="loads-list__btn" href="#">Booking Info</a>
-                                </td>                    
-                            </tr>
-                            <tr >
-                                <td class="loads-list__item loads-list__item--1">NUM101013</td>
-                                <td class="loads-list__item loads-list__item--2">Hammond, IL
-                                    <p>7:01 AM</p>
-                                </td>
-                                <td class="loads-list__item loads-list__item--3">Detroit, MI
-                                    <p>5:01 PM</p></td>
-                                <td class="loads-list__item oads-list__item--4">450</td>
-                                <td class="loads-list__item loads-list__item--5">42 655 lbs</td>
-                                <td class="loads-list__item loads-list__item--6">Dry Van</td>
-                                <td class="loads-list__item">
-                                    <a class="loads-list__btn" href="#">Booking Info</a>
-                                </td>                    
-                            </tr>
-                            <tr >
-                                <td class="loads-list__item loads-list__item--1">NUM101014</td>
-                                <td class="loads-list__item loads-list__item--2">Hammond, IL
-                                    <p>7:01 AM</p>
-                                </td>
-                                <td class="loads-list__item loads-list__item--3">Detroit, MI
-                                    <p>5:01 PM</p></td>
-                                <td class="loads-list__item oads-list__item--4">450</td>
-                                <td class="loads-list__item loads-list__item--5">42 655 lbs</td>
-                                <td class="loads-list__item loads-list__item--6">Dry Van</td>
-                                <td class="loads-list__item">
-                                    <a class="loads-list__btn" href="#">Booking Info</a>
+                                <td class="loads-list__item loads-list__item--6">1400 $</td>
+                                <td class="loads-list__item loads-list__item--7">Dry Van</td>
+                                <td class="loads-list__item" onclick="openNav()">
+                                    <span class="loads-list__btn" >Booking Info</span>
                                 </td>                    
                             </tr>
                         </table>
-                    </div> <!-- /.loads__list------------->
-            
+                    </div>
                 </section> <!-- /.loads ------------>
                 
-            </div>
-            
+            </div> <!-- /.conteiner   -->
         </main>
-        <footer class="footer">Footer</footer>
+        <footer class="footer"></footer>
     </div>
 
     <script src="assets/js/app.js"></script>
 
-
-    <script type="text/javascript">
-    
-        /* функция добавления ведущих нулей */
-        /* (если число меньше десяти, перед числом добавляем ноль) */
-        function zero_first_format(value)
-        {
-            if (value < 10)
-            {
-                value='0'+value;
-            }
-            return value;
+    <!-- Add loads --------- -->
+    <script>
+        function AddLoad() {
+          document.getElementById("mySidenavAdd").style.width = "67%";
         }
-    
-        /* функция получения текущей даты и времени */
-        function date_time()
-        {
-            var current_datetime = new Date();
-            var day = zero_first_format(current_datetime.getDate());
-            var month = zero_first_format(current_datetime.getMonth()+1);
-            var year = current_datetime.getFullYear();
-            var hours = zero_first_format(current_datetime.getHours());
-            var minutes = zero_first_format(current_datetime.getMinutes());
-            var seconds = zero_first_format(current_datetime.getSeconds());
-    
-            return day+"."+month+"."+year+" "+hours+":"+minutes+":"+seconds;
+        
+        function closeAdd() {
+          document.getElementById("mySidenavAdd").style.width = "0";
         }
-    
-        /* выводим текущую дату и время на сайт в блок с id "current_date_time_block" */
-        document.getElementById('loads__head_time_block').innerHTML = date_time();
-    </script>
-    <script type="text/javascript">
-        document.getElementById('loads__head-refresh').window.location.reload();
-
     </script>
 
+<!-- Load info -->
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "67%";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
 </html>
