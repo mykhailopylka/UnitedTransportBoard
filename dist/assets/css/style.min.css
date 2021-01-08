@@ -317,7 +317,7 @@ html {
 
 body {
   font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  font-size: 1.4rem;
+  font-size: 1.3rem !important;
   line-height: 1.5;
   color: #828282; }
 
@@ -498,8 +498,10 @@ h6 {
   display: block;
   max-width: 30%;
   width: 100%;
+  height: 65rem;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-  padding: 1.5rem; }
+  padding: 1.5rem;
+  transition: 0.5s; }
 
 .advanced__form-input, .advanced__form-load {
   width: calc(50% - .5rem);
@@ -589,10 +591,23 @@ h6 {
     box-shadow: 1px 1px 5px #000;
     border-radius: 50%; }
 
+.fixtable-fixed {
+  position: fixed;
+  top: 0;
+  z-index: 101;
+  background-color: #FCF8E4;
+  border-bottom: 1px solid #ddd; }
+
 .loads-list {
   display: block;
+  position: relative;
   width: 100%;
   margin-top: 2rem; }
+
+.loads-list__row {
+  transition: .3s all; }
+  .loads-list__row:hover {
+    background-color: #CAFFFF; }
 
 .loads-list__table {
   display: block;
@@ -603,6 +618,12 @@ h6 {
   width: calc(100% / 7);
   text-align: center;
   color: #000; }
+
+.loads-list__item {
+  vertical-align: baseline !important; }
+
+.loads-list__head {
+  top: 2em; }
 
 .loads-list__head {
   padding: 1rem; }
@@ -633,12 +654,13 @@ h6 {
     box-shadow: 1px 1px 5px #000; }
 
 .sidenav {
-  height: 56%;
+  display: block;
+  height: 50rem;
   width: 0;
   position: fixed;
-  z-index: 1;
-  margin-top: -2rem;
+  z-index: 100;
   right: 2rem;
+  top: 40%;
   background-color: #fff;
   overflow-x: hidden;
   transition: 0.5s; }
@@ -666,11 +688,14 @@ h6 {
 .loads-list--info {
   color: #ED3024; }
 
+.loads-coment {
+  margin-top: 2rem; }
+
 @media screen and (max-height: 450px) {
   .sidenav {
-    padding-top: 15px; }
+    padding-top: 1rem; }
   .sidenav a {
-    font-size: 18px; } }
+    font-size: 1rem; } }
 
 .add_loads {
   display: block;

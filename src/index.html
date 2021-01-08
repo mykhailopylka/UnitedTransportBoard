@@ -87,7 +87,7 @@ title: United Transport | Home
 </section> <!-- /.find-loads-->
 
 <div class="conteiner">
-    <section class="advanced">
+    <section class="advanced" id="block_id">
         <div class="advanced__head">
             <h2>Advanced Search</h2>
         </div>
@@ -152,8 +152,8 @@ title: United Transport | Home
                     
                 </div>
                 <!-- створити функцію закриття та відкриття бокового меню пошуку js -->
-                <div class="loads__head-advanced" id="loads__head-advanced">
-                    <span>Advansed search</span>    
+                <div class="loads__head-advanced">
+                    <a href="javascript:void(0)" onclick="showHide('block_id')">Advansed search</a>    
                 </div>
             </div>
         </div>
@@ -234,14 +234,14 @@ title: United Transport | Home
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="sidenav__content">
                 <div class="loads-list">
-                    <table class="loads-list__table">
+                    <table class="loads-list__table   table-bordered table-striped">
                         <th class="loads-list__head loads-list__1">United Transport</th>
                         <th class="loads-list__head loads-list__2">Pickup</th>
                         <th class="loads-list__head loads-list__3">Delivery</th>
                         <th class="loads-list__head loads-list__4">Loaded Miles</th>
                         <th class="loads-list__head loads-list__5">Wheight</th>
                         <th class="loads-list__head loads-list__5">Rate, $</th>
-                        <th class="loads-list__head loads-list__6">Equipment</th>
+                        <th class="loads-list__head loads-list__6">Type of van</th>
                         <th class="loads-list__head loads-list__7"> </th>
                         <tr >
                             <td class="loads-list__item loads-list__item--1">NUM101011</td>
@@ -257,7 +257,7 @@ title: United Transport | Home
                         </tr>
                     </table>
                 </div>
-                <h2>Comodity:</h2>
+                <h2 class="loads-coment">Comodity:</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti itaque eveniet ea adipisci! Quam ipsam, nisi quo corporis dicta repellat!
                 </p>
@@ -266,20 +266,99 @@ title: United Transport | Home
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti itaque eveniet ea adipisci! Quam ipsam, nisi quo corporis dicta repellat!
                 </p>
             </div>            
-          </div>          
-        
+          </div>
         <!-- /book info--------------- -->
+
+        <!-- loads list -------------- -->
+
         <div class="loads-list">
-            <table class="loads-list__table">
-                <th class="loads-list__head loads-list__1">United Transport</th>
-                <th class="loads-list__head loads-list__2">Pickup</th>
-                <th class="loads-list__head loads-list__3">Delivery</th>
-                <th class="loads-list__head loads-list__4">Loaded Miles</th>
-                <th class="loads-list__head loads-list__5">Wheight</th>
-                <th class="loads-list__head loads-list__5">Rate, $</th>
-                <th class="loads-list__head loads-list__6">Equipment</th>
-                <th class="loads-list__head loads-list__7"> </th>
-                <tr >
+            <table class="loads-list__table   table table-bordered table-striped fixtable">
+                <div class="loads-list__header">
+                    <th class="loads-list__head loads-list__1">United Transport</th>
+                    <th class="loads-list__head loads-list__2">Pickup</th>
+                    <th class="loads-list__head loads-list__3">Delivery</th>
+                    <th class="loads-list__head loads-list__4">Loaded Miles</th>
+                    <th class="loads-list__head loads-list__5">Wheight</th>
+                    <th class="loads-list__head loads-list__5">Rate, $</th>
+                    <th class="loads-list__head loads-list__6">Type of van</th>
+                    <th class="loads-list__head loads-list__7"> </th>
+                </div>
+                <tr class="loads-list__row">
+                    <td class="loads-list__item loads-list__item--1">NUM101011</td>
+                    <td class="loads-list__item loads-list__item--2">Hammond, IL
+                        <p>7:01 AM</p>
+                    </td>
+                    <td class="loads-list__item loads-list__item--3">Detroit, MI
+                        <p>5:01 PM</p></td>
+                    <td class="loads-list__item oads-list__item--4">450</td>
+                    <td class="loads-list__item loads-list__item--5">42 655 lbs</td>
+                    <td class="loads-list__item loads-list__item--6">1400 $</td>
+                    <td class="loads-list__item loads-list__item--7">Dry Van</td>
+                    <td class="loads-list__item" onclick="openNav()">
+                        <span class="loads-list__btn" >Booking Info</span>
+                    </td>                    
+                </tr>
+                <tr class="loads-list__row">
+                    <td class="loads-list__item loads-list__item--1">NUM101011</td>
+                    <td class="loads-list__item loads-list__item--2">Hammond, IL
+                        <p>7:01 AM</p>
+                    </td>
+                    <td class="loads-list__item loads-list__item--3">Detroit, MI
+                        <p>5:01 PM</p></td>
+                    <td class="loads-list__item oads-list__item--4">450</td>
+                    <td class="loads-list__item loads-list__item--5">42 655 lbs</td>
+                    <td class="loads-list__item loads-list__item--6">1400 $</td>
+                    <td class="loads-list__item loads-list__item--7">Dry Van</td>
+                    <td class="loads-list__item" onclick="openNav()">
+                        <span class="loads-list__btn" >Booking Info</span>
+                    </td>                    
+                </tr>
+                <tr class="loads-list__row">
+                    <td class="loads-list__item loads-list__item--1">NUM101011</td>
+                    <td class="loads-list__item loads-list__item--2">Hammond, IL
+                        <p>7:01 AM</p>
+                    </td>
+                    <td class="loads-list__item loads-list__item--3">Detroit, MI
+                        <p>5:01 PM</p></td>
+                    <td class="loads-list__item oads-list__item--4">450</td>
+                    <td class="loads-list__item loads-list__item--5">42 655 lbs</td>
+                    <td class="loads-list__item loads-list__item--6">1400 $</td>
+                    <td class="loads-list__item loads-list__item--7">Dry Van</td>
+                    <td class="loads-list__item" onclick="openNav()">
+                        <span class="loads-list__btn" >Booking Info</span>
+                    </td>                    
+                </tr>
+                <tr class="loads-list__row">
+                    <td class="loads-list__item loads-list__item--1">NUM101011</td>
+                    <td class="loads-list__item loads-list__item--2">Hammond, IL
+                        <p>7:01 AM</p>
+                    </td>
+                    <td class="loads-list__item loads-list__item--3">Detroit, MI
+                        <p>5:01 PM</p></td>
+                    <td class="loads-list__item oads-list__item--4">450</td>
+                    <td class="loads-list__item loads-list__item--5">42 655 lbs</td>
+                    <td class="loads-list__item loads-list__item--6">1400 $</td>
+                    <td class="loads-list__item loads-list__item--7">Dry Van</td>
+                    <td class="loads-list__item" onclick="openNav()">
+                        <span class="loads-list__btn" >Booking Info</span>
+                    </td>                    
+                </tr>
+                <tr class="loads-list__row">
+                    <td class="loads-list__item loads-list__item--1">NUM101011</td>
+                    <td class="loads-list__item loads-list__item--2">Hammond, IL
+                        <p>7:01 AM</p>
+                    </td>
+                    <td class="loads-list__item loads-list__item--3">Detroit, MI
+                        <p>5:01 PM</p></td>
+                    <td class="loads-list__item oads-list__item--4">450</td>
+                    <td class="loads-list__item loads-list__item--5">42 655 lbs</td>
+                    <td class="loads-list__item loads-list__item--6">1400 $</td>
+                    <td class="loads-list__item loads-list__item--7">Dry Van</td>
+                    <td class="loads-list__item" onclick="openNav()">
+                        <span class="loads-list__btn" >Booking Info</span>
+                    </td>                    
+                </tr>
+                <tr class="loads-list__row">
                     <td class="loads-list__item loads-list__item--1">NUM101011</td>
                     <td class="loads-list__item loads-list__item--2">Hammond, IL
                         <p>7:01 AM</p>
@@ -295,7 +374,12 @@ title: United Transport | Home
                     </td>                    
                 </tr>
             </table>
-        </div>
+        </div> <!-- /loads list -------------- --> 
+
     </section> <!-- /.loads ------------>
     
 </div> <!-- /.conteiner   -->
+
+
+
+<script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>

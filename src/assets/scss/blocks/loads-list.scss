@@ -1,7 +1,24 @@
+// loads tablle style from js----------
+.fixtable-fixed {
+	position: fixed;
+	top: 0;
+	z-index: 101;
+	background-color: #FCF8E4;
+    border-bottom: 1px solid #ddd;    
+}
+// / js style -----------
+
 .loads-list{
     display: block;
+    position: relative;
     width: 100%;
     margin-top: 2rem;
+}
+.loads-list__row{
+    transition: .3s all;
+    &:hover{
+        background-color: #CAFFFF;
+    }
 }
 .loads-list__table{
     display: block;
@@ -13,6 +30,12 @@
     width: calc(100% / 7);
     text-align: center;
     color: $black;
+}
+.loads-list__item{
+    vertical-align: baseline !important;
+}
+.loads-list__head{
+    top: 2em;
 }
 .loads-list__head{
     padding: 1rem;
@@ -52,3 +75,5 @@
             box-shadow: 1px 1px 5px $black;
         }
 }
+
+

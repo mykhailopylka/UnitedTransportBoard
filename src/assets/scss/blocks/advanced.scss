@@ -2,9 +2,10 @@
     display: block;
     max-width: 30%;
     width: 100%;
-    // border: 1px solid #000;
+    height: 65rem;
     box-shadow: 2px 2px 8px rgba($color: $black, $alpha: .5);
     padding: 1.5rem;
+    transition: 0.5s;
 }
 .advanced__form-input, .advanced__form-load{
     width: calc(50% - .5rem);

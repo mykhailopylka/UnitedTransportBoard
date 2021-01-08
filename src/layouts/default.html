@@ -13,6 +13,7 @@
     </div>
 
     <script src="assets/js/app.js"></script>
+    
 
     <!-- Add loads --------- -->
     <script>
@@ -25,15 +26,38 @@
         }
     </script>
 
-<!-- Load info -->
+    <!-- Load info -->
     <script>
         function openNav() {
-          document.getElementById("mySidenav").style.width = "67%";
+          document.getElementById("mySidenav").style.width = "97.5%";
         }
         
         function closeNav() {
           document.getElementById("mySidenav").style.width = "0";
         }
     </script>
+
+    <!-- Advanced ------------------- -->
+    <script>
+      /**
+        * Функция Скрывает/Показывает блок 
+        **/
+      function showHide(element_id) {
+        //Если элемент с id-шником element_id существует
+        if (document.getElementById(element_id)) { 
+            //Записываем ссылку на элемент в переменную obj
+            var obj = document.getElementById(element_id); 
+            //Если css-свойство display не block, то: 
+            if (obj.style.display != "none") { 
+                obj.style.display = "none"; //Показываем элемент
+            }
+            else obj.style.display = "block"; //Скрываем элемент
+        }
+        //Если элемент с id-шником element_id не найден, то выводим сообщение
+        else alert("Элемент с id: " + element_id + " не найден!"); 
+      } 
+  </script>
+
+
 </body>
 </html>
