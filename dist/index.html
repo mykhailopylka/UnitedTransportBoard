@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="assets/css/style.min.css">
     <link rel="stylesheet" href="assets/js/app.js">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Useful meta tags -->
+    <!-- * Useful meta tags -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="robots" content="index, follow">
@@ -173,7 +173,7 @@
                             <p class="loads__head-update">
                                 Last Update:
                             </p>
-                            <!-- time block -->
+                            <!-- ! time block -->
                             <div id="loads__head_time_block"></div>
                             <!-- end time block -->
                             <div class="loads__head-refresh" id="loads__head-refresh">
@@ -183,13 +183,13 @@
                                 </form>
                                 
                             </div>
-                            <!-- створити функцію закриття та відкриття бокового меню пошуку js -->
+                            <!-- ! створити функцію закриття та відкриття бокового меню пошуку js -->
                             <div class="loads__head-advanced">
                                 <a href="javascript:void(0)" onclick="showHide('block_id')">Advansed search</a>    
                             </div>
                         </div>
                     </div>
-                    <!-- Add loads --------- -->
+                    <!-- ! Add loads --------- -->
                     <div class="loads-list__item" onclick="AddLoad()">
                         <span class="loads-list__btn" >
                             Add load
@@ -260,8 +260,8 @@
                         </div>
                     </div>
             
-            <!-- loads list ----------------- -->
-                    <!-- Book info ------- -->
+            <!-- ! loads list ----------------- -->
+                    <!-- ! Book info ------- -->
                     <div id="mySidenav" class="sidenav">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                         <div class="sidenav__content">
@@ -272,9 +272,9 @@
                                     <th class="loads-list__head loads-list__3">Delivery</th>
                                     <th class="loads-list__head loads-list__4">Loaded Miles</th>
                                     <th class="loads-list__head loads-list__5">Wheight</th>
-                                    <th class="loads-list__head loads-list__5">Rate, $</th>
-                                    <th class="loads-list__head loads-list__6">Type of van</th>
-                                    <th class="loads-list__head loads-list__7"> </th>
+                                    <th class="loads-list__head loads-list__6">Rate, $</th>
+                                    <th class="loads-list__head loads-list__7">Type of van</th>
+                                    
                                     <tr >
                                         <td class="loads-list__item loads-list__item--1">NUM101011</td>
                                         <td class="loads-list__item loads-list__item--2">Hammond, IL
@@ -297,11 +297,12 @@
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti itaque eveniet ea adipisci! Quam ipsam, nisi quo corporis dicta repellat!
                             </p>
+                            <a href="book_load" class="loads-list__btn sidenav__bookit">Book it!</a>
                         </div>            
                       </div>
                     <!-- /book info--------------- -->
             
-                    <!-- loads list -------------- -->
+                    <!-- ! loads list -------------- -->
             
                     <div class="loads-list">
                         <table class="loads-list__table   table table-bordered table-striped fixtable">
@@ -423,7 +424,7 @@
     <script src="assets/js/app.js"></script>
     
 
-    <!-- Add loads --------- -->
+    <!-- ! Add loads --------- -->
     <script>
         function AddLoad() {
           document.getElementById("mySidenavAdd").style.width = "67%";
@@ -445,7 +446,7 @@
         }
     </script>
 
-    <!-- Advanced ------------------- -->
+    <!-- ! Advanced ------------------- -->
     <script>
       /**
         * Функция Скрывает/Показывает блок 

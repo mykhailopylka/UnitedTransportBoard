@@ -34,13 +34,16 @@
     font-size: 36px;
     margin-left: 50px;
   }
-
   .loads-list--info{
       color: $red;
   }
 
   .loads-coment{
     margin-top: 2rem;
+  }
+  .sidenav__bookit{
+    margin-top: 5rem;
+    width: 10rem;
   }
   
   @media screen and (max-height: 450px) {

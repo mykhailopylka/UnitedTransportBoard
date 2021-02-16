@@ -148,6 +148,23 @@
                     </table>
                 </div>
             </section> <!-- /.loads ------------>
+            
+            <!-- Update------- -->
+            <section class="update">
+                <h3>Update the date</h3>
+                <form action="../vendor/update_function.php" method="post">
+            
+                    <input type="hidden" name="id_kay" value="<?= $value['id']  ?>">
+                    
+                    <span>Title</span><br>
+                    <input type="text" name="name_kay" value="<?= $value['name'] ?>" placeholder="input name"><br>
+                    <span>Description</span><br>
+                    <textarea name="description_kay"><?= $value['description'] ?></textarea><br>
+                    <span>Phone</span><br>
+                    <input type="number" name="phone_kay" value="<?= $value['phone'] ?>" placeholder="phone"><br><br>
+                    <button type="submit ">Update</button>
+                </form>
+            </section>
             </div> <!-- /.conteiner   -->
         </main>
         <footer class="footer"></footer>

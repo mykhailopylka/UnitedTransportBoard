@@ -114,6 +114,23 @@ title: United Transport | Covered
                 </td>                    
             </tr>
         </table>
+
+        <form action="../vendor/update_function.php" method="post">
+
+            <input type="hidden" name="id_kay" value="<?= $value['id']  ?>">
+            
+            <label for="Pickup_time">Pickup time:</label>
+            <input class="add_loads-input" type="time" id="appt" name="Pickup_time" min="00:00" max="24:00" required>
+
+
+            
+            <span>Description</span><br>
+            <textarea name="description_kay"><?= $value['description'] ?></textarea><br>
+            <span>Phone</span><br>
+            <input type="number" name="phone_kay" value="<?= $value['phone'] ?>" placeholder="phone"><br><br>
+            <button type="submit ">Update</button>
+        </form>
+
     </div>
 </section> <!-- /.loads ------------>
 </div> <!-- /.conteiner   -->

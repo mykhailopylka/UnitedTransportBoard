@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/style.min.css">
-    <link rel="stylesheet" href="assets/js/app.js">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
     <!-- Useful meta tags -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,7 +15,7 @@
     <link rel="icon" href="img/favicon.png" type="image" />
     
     
-    <title>United Transport | Covered</title></head>
+    <title>United Transport | Update</title></head>
 <body>
     <div class="page">
         <div class="header__menu">
@@ -146,23 +145,6 @@
                             </td>                    
                         </tr>
                     </table>
-            
-                    <form action="../vendor/update_function.php" method="post">
-            
-                        <input type="hidden" name="id_kay" value="<?= $value['id']  ?>">
-                        
-                        <label for="Pickup_time">Pickup time:</label>
-                        <input class="add_loads-input" type="time" id="appt" name="Pickup_time" min="00:00" max="24:00" required>
-            
-            
-                        
-                        <span>Description</span><br>
-                        <textarea name="description_kay"><?= $value['description'] ?></textarea><br>
-                        <span>Phone</span><br>
-                        <input type="number" name="phone_kay" value="<?= $value['phone'] ?>" placeholder="phone"><br><br>
-                        <button type="submit ">Update</button>
-                    </form>
-            
                 </div>
             </section> <!-- /.loads ------------>
             </div> <!-- /.conteiner   -->
@@ -171,7 +153,6 @@
     </div>
 
     <script src="assets/js/app.js"></script>
-    
 
     <!-- Add loads --------- -->
     <script>
@@ -184,38 +165,15 @@
         }
     </script>
 
-    <!-- Load info -->
+<!-- Load info -->
     <script>
         function openNav() {
-          document.getElementById("mySidenav").style.width = "97.5%";
+          document.getElementById("mySidenav").style.width = "67%";
         }
         
         function closeNav() {
           document.getElementById("mySidenav").style.width = "0";
         }
     </script>
-
-    <!-- Advanced ------------------- -->
-    <script>
-      /**
-        * Функция Скрывает/Показывает блок 
-        **/
-      function showHide(element_id) {
-        //Если элемент с id-шником element_id существует
-        if (document.getElementById(element_id)) { 
-            //Записываем ссылку на элемент в переменную obj
-            var obj = document.getElementById(element_id); 
-            //Если css-свойство display не block, то: 
-            if (obj.style.display != "none") { 
-                obj.style.display = "none"; //Показываем элемент
-            }
-            else obj.style.display = "block"; //Скрываем элемент
-        }
-        //Если элемент с id-шником element_id не найден, то выводим сообщение
-        else alert("Элемент с id: " + element_id + " не найден!"); 
-      } 
-  </script>
-
-
 </body>
 </html>

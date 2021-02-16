@@ -352,7 +352,7 @@ html {
 
 body {
     font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font-size: 1.3rem !important;
+    font-size: 1.4rem;
     line-height: 1.5;
     color: #828282;
 }
@@ -613,10 +613,8 @@ h6 {
     display: block;
     max-width: 30%;
     width: 100%;
-    height: 65rem;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
     padding: 1.5rem;
-    transition: 0.5s;
 }
 
 .advanced__form-input, .advanced__form-load {
@@ -737,27 +735,10 @@ h6 {
     border-radius: 50%;
 }
 
-.fixtable-fixed {
-    position: fixed;
-    top: 0;
-    z-index: 101;
-    background-color: #FCF8E4;
-    border-bottom: 1px solid #ddd;
-}
-
 .loads-list {
     display: block;
-    position: relative;
     width: 100%;
     margin-top: 2rem;
-}
-
-.loads-list__row {
-    transition: .3s all;
-}
-
-.loads-list__row:hover {
-    background-color: #CAFFFF;
 }
 
 .loads-list__table {
@@ -767,17 +748,12 @@ h6 {
 }
 
 .loads-list__head, .loads-list__item {
-    width: calc(100% / 8);
+    width: calc(100% / 7);
     text-align: center;
     color: #000;
 }
-
-.loads-list__item {
-    vertical-align: baseline !important;
-}
-
-.loads-list__head {
-    top: 2em;
+.loads-list__row:hover{
+    background-color: azure;
 }
 
 .loads-list__head {
@@ -814,15 +790,23 @@ h6 {
     background-color: #009fed;
     box-shadow: 1px 1px 5px #000;
 }
+.loads-list__btn--bookit{
+    width: 10rem;
+    margin-top: 5rem;
+}
+.loads-list__btn--bookit:hover{
+    color: #ED3024;
+    background-color: #007DBA;
+
+}
 
 .sidenav {
-    display: block;
-    height: 50rem;
+    height: 56%;
     width: 0;
     position: fixed;
-    z-index: 100;
+    z-index: 1;
+    margin-top: -2rem;
     right: 2rem;
-    top: 40%;
     background-color: #fff;
     overflow-x: hidden;
     transition: 0.5s;
@@ -857,29 +841,20 @@ h6 {
     color: #ED3024;
 }
 
-.loads-coment {
-    margin-top: 2rem;
-}
-
-.sidenav__bookit {
-    margin-top: 5rem;
-    width: 10rem;
-}
-
 @media screen and (max-height: 450px) {
     .sidenav {
-        padding-top: 1rem;
+        padding-top: 15px;
     }
 
     .sidenav a {
-        font-size: 1rem;
+        font-size: 18px;
     }
 }
 
 .add_loads {
     display: block;
     width: 40%;
-    margin-bottom: 3rem;
+    margin-bottom: 10rem;
     font-size: 1.5rem;
     color: #000;
 }
@@ -893,34 +868,9 @@ h6 {
     margin-bottom: 1rem;
 }
 
-.add_loads-input {
+.add_loads-item input {
     border-radius: 5px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: 1rem;
-    max-width: 20rem;
-    width: 100%;
-}
-
-.add_loads-item__choose {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: left;
-    justify-content: left;
-    -ms-flex-align: left;
-    align-items: left;
-    max-width: 20rem;
-    width: 100%;
-    margin-top: 1rem;
-}
-
-.add_loads-text {
-    width: 100%;
-    height: 10rem;
-}
-
-.add__btn {
-    margin: 0 auto;
-    margin-top: 2rem;
+    min-width: 20rem;
 }
