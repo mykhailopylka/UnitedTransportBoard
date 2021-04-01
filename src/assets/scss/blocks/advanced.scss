@@ -7,12 +7,34 @@
     padding: 1.5rem;
     transition: 0.5s;
 }
+.advanced__form-item{
+    margin-top: 1.5rem;
+        &:hover{
+            border-radius: 5px;
+        }
+}
+.advanced__form-citys{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    // min-width: 19.835rem;
+}
+.advanced__form-citys__item{
+    width: 49.5%;
+    margin-top: 1rem;
+    // min-width: 19.835rem;
+}
 .advanced__form-input, .advanced__form-load{
-    width: calc(50% - .5rem);
+    width: 49.5%;
+    // min-width: 15rem;
     border: 1px solid $light-gray;
     padding: 1rem;
     border-radius: 5px;
-    color: $gray;
+    color: $gray;    
+}
+.advanced__form-input__city{
+    width: 100%;    
 }
 .input-color{
     color: $black;
@@ -48,14 +70,13 @@
 //mod for input ====================
 
 
-.stops-left{
-    position: relative;
-
-        &::before{
-            content: "test";
-            position: absolute;
-            top: 3rem;
-            left: 5rem;
-        }
+// .stops-left{
+//     position: relative;
+//         &::before{
+//             content: "test";
+//             position: absolute;
+//             top: 3rem;
+//             left: 5rem;
+//         }
     
-}
+// }

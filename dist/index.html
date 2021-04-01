@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="assets/css/style.min.css">
     <link rel="stylesheet" href="assets/js/app.js">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- * Useful meta tags -->
+    <!-- Useful meta tags -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="robots" content="index, follow">
@@ -65,58 +65,206 @@
                 </div>
             </section>  <!-- /.main__menu  -->
             
+            <!-- !Mobile version ----------------------------------->
+            <!-- Mobile version ----------------------------------->
+            <section class="main-contacts__mobile">    
+                <!-- menu burger ========== -->
+                <nav class="menu">
+                    <div class="menu-icon-wrapper" id="menu-list">
+                    <div class="menu-icon"></div>    
+                    <div class="wrapper">
+                        <ul class="menu-list">
+                            <li class="menu-list__item">
+                            <a href="#" class="menu-list__link">домашня</a>
+                            </li>
+                            <li class="menu-list__item">
+                            <a href="#about" class="menu-list__link">про нас</a>
+                            </li>
+                            <li class="menu-list__item">
+                            <a href="#services" class="menu-list__link">наші послуги</a>
+                            </li>
+                            <li class="menu-list__item">
+                            <a href="#team" class="menu-list__link">наша команда</a>
+                            </li>
+                            <li class="menu-list__item">
+                            <a href="#testimonials" class="menu-list__link">відгуки</a>
+                            </li>
+                            <li class="menu-list__item">
+                            <a href="#contacts" class="menu-list__link">контакти</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>    
+            </section>
+            <!--! end burger ------------- -->
+            
             <section class="find-loads">
                 <h1>
                     Finde Loads
                 </h1>
-                <div class="find-loads__wrapper">
+                <form class="find-loads__form find-loads__wrapper" action="/" method="POST">
                     <div class="find-loads__left">
                         <div class="find-loads__item">
                             <span class="find-loads__font">
                                 Origin
-                            </span>
-                            <form class="find-loads__form" action="/" method="POST">
-                                <input class="find-loads__city" type="text" placeholder="City, State, ZIP">
-                            </form>
+                            </span>                
+                                <input class="find-loads__city" type="text" placeholder="Сity ​​of dispatch">
                         </div>
-                        <div class="find-loads__item">
-                            <span class="find-loads__font">
-                                DH-O
-                            </span>
-                            <form class="find-loads__form" action="/" method="POST">
-                                <input class="find-loads__dh" type="text" value="100">
-                            </form>
-                        </div>
+                        <div class="find-loads__change-direction">
+                            <div class="find-loads__item">
+                                <span class="find-loads__font">
+                                    State
+                                </span>
+                                <select class="find-loads__state find-loads__form" name="find-loads__state-pickup">
+                                    <option class="find-loads__state-item" value="none" hidden="">State</option>
+                                    <option class="find-loads__state-item" value="ID">ID</option>
+                                    <option class="find-loads__state-item" value="IA">IA</option>
+                                    <option class="find-loads__state-item" value="1">AL</option>
+                                    <option class="find-loads__state-item" value="1">AK</option>
+                                    <option class="find-loads__state-item" value="1">AZ</option>
+                                    <option class="find-loads__state-item" value="1">AR</option>
+                                    <option class="find-loads__state-item" value="1">WY</option>
+                                    <option class="find-loads__state-item" value="1">WA</option>
+                                    <option class="find-loads__state-item" value="1">VT</option>
+                                    <option class="find-loads__state-item" value="1">VA</option>
+                                    <option class="find-loads__state-item" value="1">WI</option>
+                                    <option class="find-loads__state-item" value="1">HI</option>
+                                    <option class="find-loads__state-item" value="1">DE</option>
+                                    <option class="find-loads__state-item" value="1">GA</option>
+                                    <option class="find-loads__state-item" value="1">WV</option>
+                                    <option class="find-loads__state-item" value="1">IL</option>
+                                    <option class="find-loads__state-item" value="1">IN</option>
+                                    <option class="find-loads__state-item" value="1">CA</option>
+                                    <option class="find-loads__state-item" value="1">KS</option>
+                                    <option class="find-loads__state-item" value="1">KY</option>
+                                    <option class="find-loads__state-item" value="1">CO</option>
+                                    <option class="find-loads__state-item" value="1">CT</option>
+                                    <option class="find-loads__state-item" value="1">LA</option>
+                                    <option class="find-loads__state-item" value="1">MA</option>
+                                    <option class="find-loads__state-item" value="1">ME</option>
+                                    <option class="find-loads__state-item" value="1">MD</option>
+                                    <option class="find-loads__state-item" value="1">MN</option>
+                                    <option class="find-loads__state-item" value="1">MS</option>
+                                    <option class="find-loads__state-item" value="1">MO</option>
+                                    <option class="find-loads__state-item" value="1">MI</option>
+                                    <option class="find-loads__state-item" value="1">MT</option>
+                                    <option class="find-loads__state-item" value="1">NE</option>
+                                    <option class="find-loads__state-item" value="1">NV</option>
+                                    <option class="find-loads__state-item" value="1">NY</option>
+                                    <option class="find-loads__state-item" value="1">NH</option>
+                                    <option class="find-loads__state-item" value="1">NJ</option>
+                                    <option class="find-loads__state-item" value="1">NM</option>
+                                    <option class="find-loads__state-item" value="1">OH</option>
+                                    <option class="find-loads__state-item" value="1">OK</option>
+                                    <option class="find-loads__state-item" value="1">OR</option>
+                                    <option class="find-loads__state-item" value="1">PA</option>
+                                    <option class="find-loads__state-item" value="1">SD</option>
+                                    <option class="find-loads__state-item" value="1">SC</option>
+                                    <option class="find-loads__state-item" value="1">ND</option>
+                                    <option class="find-loads__state-item" value="1">NC</option>
+                                    <option class="find-loads__state-item" value="1">RI</option>
+                                    <option class="find-loads__state-item" value="1">TN</option>
+                                    <option class="find-loads__state-item" value="1">TX</option>
+                                    <option class="find-loads__state-item" value="1">FL</option>
+                                    <option class="find-loads__state-item" value="1">UT</option>
+                                </select>
+                            </div>
+                            <div class="find-loads__item">
+                                <span class="find-loads__font">
+                                    DH-O
+                                </span>
+                                    <input class="find-loads__dh" type="text" value="100">
+                            </div>
+                        </div>            
                         <div class="find-loads__item">
                             <span class="find-loads__font">
                                 Destination
                             </span>
-                            <form class="find-loads__form form--destination" action="/" method="POST">
-                                <input class="find-loads__city" type="text" placeholder="City, State, ZIP">
-                            </form>
+                                <input class="find-loads__city" type="text" placeholder="Сity ​​of receipt">
                         </div>
-                        <div class="find-loads__item">
-                            <span class="find-loads__font">
-                                DH-D
-                            </span>
-                            <form class="find-loads__form form--dhd" action="/" method="POST">
-                                <input class="find-loads__dh" type="text" value="100">
-                            </form>
+                        <div class="find-loads__change-direction">
+                            <div class="find-loads__item">
+                                <span class="find-loads__font">
+                                    State
+                                </span>
+                                <select class="find-loads__state find-loads__form" name="find-loads__state-pickup">
+                                    <option class="find-loads__state-item" value="none" hidden="">State</option>
+                                    <option class="find-loads__state-item" value="ID">ID</option>
+                                    <option class="find-loads__state-item" value="IA">IA</option>
+                                    <option class="find-loads__state-item" value="1">AL</option>
+                                    <option class="find-loads__state-item" value="1">AK</option>
+                                    <option class="find-loads__state-item" value="1">AZ</option>
+                                    <option class="find-loads__state-item" value="1">AR</option>
+                                    <option class="find-loads__state-item" value="1">WY</option>
+                                    <option class="find-loads__state-item" value="1">WA</option>
+                                    <option class="find-loads__state-item" value="1">VT</option>
+                                    <option class="find-loads__state-item" value="1">VA</option>
+                                    <option class="find-loads__state-item" value="1">WI</option>
+                                    <option class="find-loads__state-item" value="1">HI</option>
+                                    <option class="find-loads__state-item" value="1">DE</option>
+                                    <option class="find-loads__state-item" value="1">GA</option>
+                                    <option class="find-loads__state-item" value="1">WV</option>
+                                    <option class="find-loads__state-item" value="1">IL</option>
+                                    <option class="find-loads__state-item" value="1">IN</option>
+                                    <option class="find-loads__state-item" value="1">CA</option>
+                                    <option class="find-loads__state-item" value="1">KS</option>
+                                    <option class="find-loads__state-item" value="1">KY</option>
+                                    <option class="find-loads__state-item" value="1">CO</option>
+                                    <option class="find-loads__state-item" value="1">CT</option>
+                                    <option class="find-loads__state-item" value="1">LA</option>
+                                    <option class="find-loads__state-item" value="1">MA</option>
+                                    <option class="find-loads__state-item" value="1">ME</option>
+                                    <option class="find-loads__state-item" value="1">MD</option>
+                                    <option class="find-loads__state-item" value="1">MN</option>
+                                    <option class="find-loads__state-item" value="1">MS</option>
+                                    <option class="find-loads__state-item" value="1">MO</option>
+                                    <option class="find-loads__state-item" value="1">MI</option>
+                                    <option class="find-loads__state-item" value="1">MT</option>
+                                    <option class="find-loads__state-item" value="1">NE</option>
+                                    <option class="find-loads__state-item" value="1">NV</option>
+                                    <option class="find-loads__state-item" value="1">NY</option>
+                                    <option class="find-loads__state-item" value="1">NH</option>
+                                    <option class="find-loads__state-item" value="1">NJ</option>
+                                    <option class="find-loads__state-item" value="1">NM</option>
+                                    <option class="find-loads__state-item" value="1">OH</option>
+                                    <option class="find-loads__state-item" value="1">OK</option>
+                                    <option class="find-loads__state-item" value="1">OR</option>
+                                    <option class="find-loads__state-item" value="1">PA</option>
+                                    <option class="find-loads__state-item" value="1">SD</option>
+                                    <option class="find-loads__state-item" value="1">SC</option>
+                                    <option class="find-loads__state-item" value="1">ND</option>
+                                    <option class="find-loads__state-item" value="1">NC</option>
+                                    <option class="find-loads__state-item" value="1">RI</option>
+                                    <option class="find-loads__state-item" value="1">TN</option>
+                                    <option class="find-loads__state-item" value="1">TX</option>
+                                    <option class="find-loads__state-item" value="1">FL</option>
+                                    <option class="find-loads__state-item" value="1">UT</option>
+                                </select>
+                            </div>
+                            <div class="find-loads__item">
+                                <span class="find-loads__font">
+                                    DH-D
+                                </span>
+                                    <input class="find-loads__dh" type="text" value="100">
+                            </div>
                         </div>
+                        
                         <div class="find-loads__item">
                             <span class="find-loads__font">
                                 Equipment Type
                             </span>
-                            <form class="find-loads__form form--type" action="/" method="POST">
-                                <input class="find-loads__city" type="text" placeholder="All Equipment">
-                            </form>
+                                <select class="find-loads__state find-loads__form find-loads__type" name="find-loads__state-pickup">
+                                    <option class="find-loads__state-item" value="none" hidden="">Van Type</option>
+                                    <option class="find-loads__state-item" value="Dry Van">Dry Van</option>
+                                    <option class="find-loads__state-item" value="Reefer">Reefer</option>
+                                </select>
                         </div>
-                    </div>
+                    </div>        <!--end /find-loads__left-->     
                     <div class="find-loads__right">
-                        <a class="find-loads__btn" href="#" >Search</a>
+                            <a class="find-loads__btn" href="#" >Search</a>
                     </div>
-                </div> <!-- find-loads__wrapper-->
-            </section> <!-- /.find-loads-->
+                </form>      <!-- find-loads__wrapper-->     
+            </section>   <!--.find-loads-->
             
             <div class="conteiner">
                 <section class="advanced" id="block_id">
@@ -125,17 +273,51 @@
                     </div>
                     <div class="advanced__form">
                         <form class="advanced__form-lines" action="/" method="POST">
-                            <div class="advanced__form-item">
-                                <h3>Pickup Date Range</h3>
-                                <input class="advanced__form-input" type="date">
-                                <input class="advanced__form-input" type="date">
+                            <div class=" advanced__form-citys">
+                                <div class="advanced__form-citys__item">
+                                    <h3>City of dispatch</h3>
+                                    <input class="advanced__form-input advanced__form-input__city" type="text" placeholder="Pick up">
+                                </div>
+                                <div class="advanced__form-citys__item">
+                                    <h3>City of receipt</h3>
+                                    <input class="advanced__form-input advanced__form-input__city" type="text" placeholder="Delivery">
+                                </div>                    
                             </div>
-                            <div class="advanced__form-item">
-                                <h3>Delivery Date Range</h3>
-                                <input class="advanced__form-input" type="date">
-                                <input class="advanced__form-input" type="date">
+                            <div class=" advanced__form-citys">
+                                <div class="advanced__form-citys__item">
+                                    <h3>Pick Up Date</h3>
+                                    <input class="advanced__form-input advanced__form-input__city" type="date">
+                                </div>
+                                <div class="advanced__form-citys__item">
+                                    <h3>Delivery Date</h3>
+                                    <input class="advanced__form-input advanced__form-input__city" type="date">
+                                </div>                    
                             </div>
-                            <div class="advanced__form-item">
+                            <div class=" advanced__form-citys">
+                                <div class="advanced__form-citys__item">
+                                    <h3>Loaded miles</h3>
+                                    <input class="advanced__form-input advanced__form-input__city" type="text" placeholder="Less then">
+                                </div>
+                                <div class="advanced__form-citys__item">
+                                    <h3>Wheight</h3>
+                                    <input class="advanced__form-input advanced__form-input__city" type="text" placeholder="Less then">
+                                </div>                    
+                            </div>
+                            <div class=" advanced__form-citys">
+                                <div class="advanced__form-citys__item">
+                                    <h3>Rate</h3>
+                                    <input class="advanced__form-input advanced__form-input__city" type="text" placeholder="Less then">
+                                </div>
+                                <div class="advanced__form-citys__item">
+                                    <h3>Type of van</h3>
+                                    <select class="advanced__form-input advanced__form-input__city" name="find-loads__state-pickup">
+                                        <option class="find-loads__state-item" value="none" hidden="">Van Type</option>
+                                        <option class="find-loads__state-item" value="Dry Van">Dry Van</option>
+                                        <option class="find-loads__state-item" value="Reefer">Reefer</option>
+                                    </select>
+                                </div>                    
+                            </div>
+                            <!-- <div class="advanced__form-item">
                                 <h3>Loads Miles</h3>
                                 <input class="advanced__form-input input-color" type="text" value="0">
                                 <input class="advanced__form-input input-color" type="text" value="1000">
@@ -144,7 +326,7 @@
                                 <h3>Stops</h3>
                                 <input class="advanced__form-input input-color stops-left" type="text" value="0">
                                 <input class="advanced__form-input input-color stops-right" type="text" value="1000">
-                            </div>
+                            </div> -->
                             <!-- load number -->
                             <div class="advanced__form-item">
                                 <input class="advanced__form-load" type="text" placeholder="Load Number">
@@ -173,7 +355,7 @@
                             <p class="loads__head-update">
                                 Last Update:
                             </p>
-                            <!-- ! time block -->
+                            <!-- time block -->
                             <div id="loads__head_time_block"></div>
                             <!-- end time block -->
                             <div class="loads__head-refresh" id="loads__head-refresh">
@@ -183,13 +365,13 @@
                                 </form>
                                 
                             </div>
-                            <!-- ! створити функцію закриття та відкриття бокового меню пошуку js -->
+                            <!-- створити функцію закриття та відкриття бокового меню пошуку js -->
                             <div class="loads__head-advanced">
                                 <a href="javascript:void(0)" onclick="showHide('block_id')">Advansed search</a>    
                             </div>
                         </div>
                     </div>
-                    <!-- ! Add loads --------- -->
+                    <!-- Add loads --------- -->
                     <div class="loads-list__item" onclick="AddLoad()">
                         <span class="loads-list__btn" >
                             Add load
@@ -260,8 +442,8 @@
                         </div>
                     </div>
             
-            <!-- ! loads list ----------------- -->
-                    <!-- ! Book info ------- -->
+            <!-- loads list ----------------- -->
+                    <!-- Book info ------- -->
                     <div id="mySidenav" class="sidenav">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                         <div class="sidenav__content">
@@ -302,7 +484,7 @@
                       </div>
                     <!-- /book info--------------- -->
             
-                    <!-- ! loads list -------------- -->
+                    <!-- loads list -------------- -->
             
                     <div class="loads-list">
                         <table class="loads-list__table   table table-bordered table-striped fixtable">
@@ -424,7 +606,12 @@
     <script src="assets/js/app.js"></script>
     
 
-    <!-- ! Add loads --------- -->
+    <!-- burger menu  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      
+    
+
+    <!-- Add loads --------- -->
     <script>
         function AddLoad() {
           document.getElementById("mySidenavAdd").style.width = "67%";
@@ -446,7 +633,7 @@
         }
     </script>
 
-    <!-- ! Advanced ------------------- -->
+    <!-- Advanced ------------------- -->
     <script>
       /**
         * Функция Скрывает/Показывает блок 

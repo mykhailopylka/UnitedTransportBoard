@@ -101,7 +101,26 @@ $(document).ready(function(){
 // function openNav() {
 //     document.getElementById("mySidenav").style.width = "250px";
 //   }
-  
+
 //   function closeNav() {
 //     document.getElementById("mySidenav").style.width = "0";
 //   }
+
+
+
+// burger menu ---трансформація бутербродного меню в хрестик і назад
+$(function () {
+	document.querySelector(".menu-icon-wrapper").onclick = function () {
+	document.querySelector(".menu-icon").classList.toggle("menu-icon-active");
+	};
+});
+// виїзд меню при натисканні на іконку бутербодного меню
+$(function () {
+	$(".menu-icon-wrapper").on("click", function () {
+	$(".menu-list").slideToggle(300, function () {
+		if ($(this).css("display") === "block") {
+		// $(this).removeAttr("style");
+		}
+	});
+	});
+});

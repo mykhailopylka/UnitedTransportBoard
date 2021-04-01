@@ -17,7 +17,7 @@ html {
 body {
     // background-color: #181818;
     font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font-size: 1.3rem !important;
+    font-size: 1.4rem !important;
     line-height: 1.5;
     color: $gray;
 }
@@ -76,3 +76,5 @@ h6{
 @import "blocks/loads-list";
 @import "blocks/book-info";
 @import "blocks/add_loads";
+@import "blocks/mobile";
+@import "blocks/adaptive";

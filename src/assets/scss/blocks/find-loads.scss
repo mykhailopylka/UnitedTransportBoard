@@ -17,7 +17,7 @@
 .find-loads__font{
     color: $white;
 }
-.find-loads__form{
+.find-loads__item{
     margin-right: 2rem;
         :active, :hover, :focus {
             outline: 0;
@@ -52,7 +52,27 @@
         &:hover{
             background-color: darken($color: $green, $amount: 5%);
             color: $white;
-            box-shadow: 0 4px 4px rgba($black, .25);    
+            box-shadow: 2px 4px 4px rgba($black, .25);    
 
         }
 }
+// stats ------------------
+.find-loads__state {
+    display: block;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    width: 6rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.find-loads__type{
+    width: 9rem;
+}
+// cange direction -------
+.find-loads__change-direction{
+    display: flex;
+}
+
+
+
