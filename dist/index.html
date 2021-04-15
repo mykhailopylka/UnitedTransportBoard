@@ -67,34 +67,36 @@
             
             <!-- !Mobile version ----------------------------------->
             <!-- Mobile version ----------------------------------->
-            <section class="main-contacts__mobile">    
-                <!-- menu burger ========== -->
+            <!-- Mobile version ----------------------------------->
+            <section class="main-contacts__mobile">
+            <!-- menu burger ========== -->
                 <nav class="menu">
                     <div class="menu-icon-wrapper" id="menu-list">
-                    <div class="menu-icon"></div>    
+                        <div class="menu-icon"></div>
+                    </div>
                     <div class="wrapper">
                         <ul class="menu-list">
                             <li class="menu-list__item">
-                            <a href="#" class="menu-list__link">домашня</a>
+                            <a href="#" class="menu-list__link">Home</a>
                             </li>
                             <li class="menu-list__item">
-                            <a href="#about" class="menu-list__link">про нас</a>
+                            <a href="#about" class="menu-list__link">our technology</a>
                             </li>
                             <li class="menu-list__item">
-                            <a href="#services" class="menu-list__link">наші послуги</a>
+                            <a href="#services" class="menu-list__link">shipment solution</a>
                             </li>
                             <li class="menu-list__item">
-                            <a href="#team" class="menu-list__link">наша команда</a>
+                            <a href="#team" class="menu-list__link">carrier solutionsа</a>
                             </li>
                             <li class="menu-list__item">
-                            <a href="#testimonials" class="menu-list__link">відгуки</a>
+                            <a href="#testimonials" class="menu-list__link">our company</a>
                             </li>
                             <li class="menu-list__item">
-                            <a href="#contacts" class="menu-list__link">контакти</a>
+                            <a href="#contacts" class="menu-list__link">contact us</a>
                             </li>
                         </ul>
                     </div>
-                </nav>    
+                </nav>
             </section>
             <!--! end burger ------------- -->
             
@@ -481,7 +483,7 @@
                             </p>
                             <a href="book_load" class="loads-list__btn sidenav__bookit">Book it!</a>
                         </div>            
-                      </div>
+                    </div>
                     <!-- /book info--------------- -->
             
                     <!-- loads list -------------- -->
@@ -511,7 +513,7 @@
                                 <td class="loads-list__item loads-list__item--7">Dry Van</td>
                                 <td class="loads-list__item" onclick="openNav()">
                                     <span class="loads-list__btn" >Booking Info</span>
-                                </td>                    
+                                </td>
                             </tr>
                             <tr class="loads-list__row">
                                 <td class="loads-list__item loads-list__item--1">NUM101011</td>
@@ -594,11 +596,6 @@
                 </section> <!-- /.loads ------------>
                 
             </div> <!-- /.conteiner   -->
-            
-            
-            
-            <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
-            
         </main>
         <footer class="footer"></footer>
     </div>
@@ -654,6 +651,24 @@
       } 
   </script>
 
+  <script>
+      // burger menu ---трансформація бутербродного меню в хрестик і назад
+    $(function () {
+      document.querySelector(".menu-icon-wrapper").onclick = function () {
+        document.querySelector(".menu-icon").classList.toggle("menu-icon-active");
+      };
+    });
+    // виїзд меню при натисканні на іконку бутербодного меню
+    $(function () {
+      $(".menu-icon-wrapper").on("click", function () {
+        $(".menu-list").slideToggle(300, function () {
+          if ($(this).css("display") === "block") {
+            // $(this).removeAttr("style");
+          }
+        });
+      });
+    });
+  </script>
 
 </body>
 </html>

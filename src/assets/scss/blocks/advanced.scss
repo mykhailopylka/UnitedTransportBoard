@@ -22,8 +22,7 @@
 }
 .advanced__form-citys__item{
     width: 49.5%;
-    margin-top: 1rem;
-    // min-width: 19.835rem;
+    margin-top: 1rem;   
 }
 .advanced__form-input, .advanced__form-load{
     width: 49.5%;
@@ -34,7 +33,10 @@
     color: $gray;    
 }
 .advanced__form-input__city{
-    width: 100%;    
+    width: 100%; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 .input-color{
     color: $black;
