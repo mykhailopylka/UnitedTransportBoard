@@ -916,6 +916,12 @@ h6 {
     }
 }
 
+.book-info__frame iframe {
+    display: block;
+    width: 30rem;
+    height: 20rem;
+}
+
 .add_loads {
     display: block;
     width: 40%;
